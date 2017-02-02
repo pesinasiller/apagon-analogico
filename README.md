@@ -11,5 +11,5 @@
   
  
  
-  - calcetagate (secuenciador modular)
+  - calcetagate (secuenciador/caja de ritmos)
   ![](img/calcetgate.png)
