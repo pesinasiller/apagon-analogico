@@ -11,5 +11,5 @@
   
  
  
-  - calcetgate (secuenciador modular)
+  - calcetagate (secuenciador modular)
   ![](img/calcetgate.png)
