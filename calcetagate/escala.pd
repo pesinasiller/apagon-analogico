@@ -1,0 +1,45 @@
+#N canvas 392 154 601 526 10;
+#X floatatom 83 -23 5 0 0 0 - - -;
+#X floatatom 165 39 5 0 0 0 - - -;
+#X obj 155 193 *;
+#X floatatom 83 175 5 0 0 0 - - -;
+#X floatatom 150 300 5 0 0 0 - - -;
+#X obj 320 -5 popup 124 25 #ffffff popup none Unison Minor_Second Major_Second
+Minor_Third Major_Third Fourth Diminished_Fifth Fifth Minor_Sixth Major_Sixth
+Minor_Seventh Major_Seventh Octave;
+#X msg 317 -61 options none Unison Minor_Second Major_Second Minor_Third
+Major_Third Fourth Diminished_Fifth Fifth Minor_Sixth Major_Sixth Minor_Seventh
+Major_Seventh Octave;
+#X obj 321 -108 loadbang;
+#X msg 112 55 read;
+#X obj 78 111 coll just-scale;
+#C restore;
+#X obj 16 -84 inlet nota;
+#X obj 167 -122 inlet fundamental;
+#X text 175 58 fundamental;
+#X obj 232 -84 inlet octava;
+#X obj 212 241 *;
+#X text 262 136 octava;
+#X floatatom 233 116 5 0 0 0 - - -;
+#X msg 275 72 1;
+#X obj 151 339 outlet;
+#X msg 192 -50 261.626;
+#X connect 0 0 5 0;
+#X connect 0 0 9 0;
+#X connect 1 0 2 1;
+#X connect 2 0 14 0;
+#X connect 3 0 2 0;
+#X connect 4 0 18 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 0;
+#X connect 7 0 17 0;
+#X connect 7 0 19 0;
+#X connect 8 0 9 0;
+#X connect 9 0 3 0;
+#X connect 10 0 0 0;
+#X connect 11 0 1 0;
+#X connect 13 0 16 0;
+#X connect 14 0 4 0;
+#X connect 16 0 14 1;
+#X connect 17 0 16 0;
+#X connect 19 0 1 0;
